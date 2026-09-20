@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research — BTC Media Labs</title>
+<meta name="description" content="Our research programme: on-device speech and sound systems that know when they are unsure. We are seeking a university research partner for an NSF STTR collaboration.">
+<link rel="canonical" href="https://btcmedialabs.com/research/">
+<meta name="theme-color" content="#0D1622">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BTC Media Labs">
+<meta property="og:title" content="Research — BTC Media Labs">
+<meta property="og:description" content="Our research programme: on-device speech and sound systems that know when they are unsure. We are seeking a university research partner for an NSF STTR collaboration.">
+<meta property="og:url" content="https://btcmedialabs.com/research/">
+<meta property="og:image" content="https://btcmedialabs.com/assets/btc-logo-512.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="/">
+      <img src="/assets/btc-chip-160.png" width="40" height="40" alt="">
+      <span class="brand-text"><b>BTC</b> Media Labs</span>
+    </a>
+    <input type="checkbox" id="navtoggle" hidden>
+    <label class="burger" for="navtoggle" aria-label="Menu"><span></span><span></span><span></span></label>
+    <nav class="site-nav" aria-label="Main">
+      <a href="/products/">Products</a>
+      <a href="/research/" aria-current="page">Research</a>
+      <a href="/approach/">Approach</a>
+      <a href="/about/">About</a>
+      <a href="/news/">News</a>
+      <a class="cta" href="/contact/">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Research programme</p>
+    <h1>Software that knows when it doesn't know.</h1>
+    <p class="lead">EverHeard captions speech and flags meaningful sounds entirely on-device, for people who are Deaf or hard of hearing. Our research programme takes on the problem the product does not yet solve: teaching an on-device system to recognise when it isn't sure, and to say "unclear" or stay silent rather than present a confident error the reader cannot catch.</p>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section>
+  <div class="wrap prose">
+    <h2>Why it matters</h2>
+    <p>A hearing person notices a bad caption, because they also heard the words. A Deaf or hard-of-hearing reader has only the caption. That makes a fluent, confident mistake more damaging than a gap — it is trusted precisely because it reads well.</p>
+    <p>Small speech models that run on a phone make this worse. They offer no dependable measure of their own certainty, and they can produce plausible text from silence or background clatter. The same is true of naming a speaker or identifying a sound: a confident guess, with nothing behind it.</p>
+
+    <h2>What we are researching</h2>
+    <p>One on-device system, advanced along five aims:</p>
+    <ul>
+      <li><strong>Calibrated uncertainty and principled abstention</strong> across captions, speaker identity and sound events — the core of the work</li>
+      <li><strong>Open-set speaker recognition</strong>: rejecting the unknown voice instead of forcing a match</li>
+      <li><strong>Streaming, persistent identity</strong>: who is speaking, live, as a conversation grows</li>
+      <li><strong>Robustness</strong> in real rooms, with noise, overlap and non-speech</li>
+      <li><strong>On-device efficiency</strong>, so all of it fits within a phone's compute, thermal and battery budget</li>
+    </ul>
+    <p>Progress is measured by a trust-aware risk–coverage curve, which rewards correct silence and penalises confident errors, rather than by word error rate alone.</p>
+
+    <div class="callout">
+      <p class="muted small" style="margin:0"><strong>Status.</strong> R&amp;D with a defined roadmap. Calibrated abstention and reliable speaker identity are research goals, not shipped features. A provisional patent covering the calibrated-abstention method was filed in September 2026 (patent pending).</p>
+    </div>
+
+    <h2>What we bring</h2>
+    <ul>
+      <li>A shipped, fully on-device system across iPhone, iPad and Mac, with an Apple Watch companion</li>
+      <li>On-device engines for speech recognition, sound-event classification and speaker embedding</li>
+      <li>The policy layers around them: hallucination filtering, noise gating, honest three-tier sound labelling with a safety override</li>
+      <li>Real-device field logs, an ongoing TestFlight beta, and a connection to the Deaf and hard-of-hearing community for validation</li>
+      <li>A GPU compute grant from Lambda, through NVIDIA Inception</li>
+      <li>The ability to ship what the research produces to real users</li>
+    </ul>
+
+    <h2>What we're looking for</h2>
+    <p>We are seeking a university research partner for an <strong>NSF STTR</strong> collaboration: a lab to lead the recognition science, with a named senior researcher as day-to-day technical lead, while BTC Media Labs leads the product, the on-device engineering and the deployment.</p>
+    <p>For a partner lab, this offers co-authored publications on a genuinely unsolved problem, a real deployment platform and field data for evaluation, graduate-student funding through the subaward, and broader impacts grounded in an underserved accessibility need.</p>
+    <p>We are currently in discussions with research institutions, and a second NSF project pitch is in preparation.</p>
+
+    <div class="callout">
+      <h3 style="margin-top:0">Researching this with us</h3>
+      <p>If your lab works on speaker recognition, diarisation, robust speech, or uncertainty-aware machine learning, we'd like to hear from you. Tell us about your group's relevant work, whether you could commit named effort, your rough availability, and any prior SBIR or STTR experience. We'll send a one-page sketch of the aims and propose a call.</p>
+      <p style="margin:0"><a class="btn btn-primary" href="mailto:alex@btcmedialabs.com?subject=EverHeard%20research%20collaboration">Contact us about research collaboration</a></p>
+    </div>
+
+    <h2>Privacy, by construction</h2>
+    <p>The product processes everything on the device; nothing leaves it in normal use. Any research data is gathered only through an explicit, consented development channel, never from the distributed app. We treat that constraint as part of the research problem rather than an obstacle to it.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-grid">
+    <div>
+      <a class="brand" href="/"><img src="/assets/btc-chip-160.png" width="36" height="36" alt=""><span class="brand-text"><b>BTC</b> Media Labs</span></a>
+      <p class="muted small">Human-first technology, built in New York.<br>BTC Media Labs LLC</p>
+    </div>
+    <div>
+      <h2 class="foot-h">Products</h2>
+      <ul class="plain">
+        <li><a href="https://everheard.app">EverHeard</a></li>
+        <li><a href="https://macromkr.btcmedialabs.com">Myth MacroMKR</a></li>
+        <li><a href="/products/#resumecraft">ResumeCraft AI</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="foot-h">Company</h2>
+      <ul class="plain">
+        <li><a href="/about/">About</a></li>
+        <li><a href="/research/">Research</a></li>
+        <li><a href="/press/">Press kit</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="foot-h">Legal</h2>
+      <ul class="plain">
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/terms/">Terms</a></li>
+        <li><a href="/accessibility/">Accessibility</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap foot-base">
+    <p class="muted small">© 2026 BTC Media Labs LLC · New York · <a href="mailto:alex@btcmedialabs.com">alex@btcmedialabs.com</a></p>
+    <p class="muted small">Sister company: <a href="https://bt-consultingllc.com">Business Transformation Consulting</a></p>
+  </div>
+</footer>
+</body>
+</html>
