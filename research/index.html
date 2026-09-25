@@ -67,7 +67,7 @@
       <li><strong>Robustness</strong> in real rooms, with noise, overlap and non-speech</li>
       <li><strong>On-device efficiency</strong>, so all of it fits within a phone's compute, thermal and battery budget</li>
     </ul>
-    <p>Progress is measured by a trust-aware risk–coverage curve, which rewards correct silence and penalises confident errors, rather than by word error rate alone.</p>
+    <p>Success is judged by how honestly the system abstains when it should, not by raw accuracy alone.</p>
 
     <div class="callout">
       <p class="muted small" style="margin:0"><strong>Status.</strong> R&amp;D with a defined roadmap. Calibrated abstention and reliable speaker identity are research goals, not shipped features. A provisional patent covering the calibrated-abstention method was filed in September 2026 (patent pending).</p>
@@ -77,7 +77,7 @@
     <ul>
       <li>A shipped, fully on-device system across iPhone, iPad and Mac, with an Apple Watch companion</li>
       <li>On-device engines for speech recognition, sound-event classification and speaker embedding</li>
-      <li>The policy layers around them: hallucination filtering, noise gating, honest three-tier sound labelling with a safety override</li>
+      <li>The honesty layers we have built around them</li>
       <li>Real-device field logs, an ongoing TestFlight beta, and a connection to the Deaf and hard-of-hearing community for validation</li>
       <li>A GPU compute grant from Lambda, through NVIDIA Inception</li>
       <li>The ability to ship what the research produces to real users</li>
