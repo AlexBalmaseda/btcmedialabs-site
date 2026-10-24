@@ -89,6 +89,13 @@ section{padding:clamp(48px,7vw,96px) 0}
 .badge.soon{color:var(--gold);border-color:rgba(212,166,44,.42)}
 .tag{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--silver-soft);font-weight:650}
 .card-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.store-badges{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:10px 0}
+.store-badges a{display:block;line-height:0}
+.store-badges img.store-badge{height:40px;width:auto;max-width:none;border-radius:0}
+.get-apps{display:grid;gap:14px}
+.get-app{display:grid;gap:4px;border-top:1px solid var(--line);padding-top:14px}
+.get-app h3{margin:0}
+.get-app p{margin:0}
 
 /* news + prose */
 .news-item{border-top:1px solid var(--line);padding:22px 0;display:grid;gap:6px}
